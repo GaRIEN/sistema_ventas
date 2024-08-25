@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'sistema_ventas.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME':'sistema_ventas',
+        'USER':'remote',
+        'PASSWORD':'12321',
+        'HOST':'192.168.1.8',
+        'PORT':'3306'
     }
 }
 
